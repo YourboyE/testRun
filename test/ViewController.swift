@@ -11,14 +11,13 @@ import UIKit
 class ViewController: UIViewController {
 
     var counter = 0
-    
     @IBOutlet weak var textLine: UILabel!
     @IBOutlet weak var countView: UILabel!
     
+    @IBOutlet weak var buttonIcon: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
         countView.text = "\(counter)"
     }
@@ -36,7 +35,7 @@ class ViewController: UIViewController {
         } else if counter == 20 {
             textLine.text = "One more round"
             view.backgroundColor = UIColor.green
-            
+            buttonIcon.isEnabled = false
         } 
     }
     
@@ -46,6 +45,7 @@ class ViewController: UIViewController {
         view.backgroundColor = UIColor.white
         counter = 0
         countView.text = "\(counter)"
+        buttonIcon.isEnabled = true
         
     }
     

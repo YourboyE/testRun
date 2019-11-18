@@ -67,6 +67,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="buttonIcon" destination="AhG-Uw-X71" id="Icc-Ux-12C"/>
                         <outlet property="countView" destination="qXV-4j-JXW" id="x05-yu-5YE"/>
                         <outlet property="textLine" destination="efl-Sr-v7b" id="agV-6C-Xvv"/>
                     </connections>
