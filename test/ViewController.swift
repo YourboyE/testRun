@@ -16,6 +16,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var buttonIcon: UIButton!
     
+    @IBOutlet weak var firstTextFld: UITextField!
+    
+    @IBOutlet weak var secondTextFld: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,7 +27,16 @@ class ViewController: UIViewController {
     }
 
     @IBAction func button(_ sender: Any) {
+       
+        if firstTextFld.text != nil && secondTextFld.text != nil {
+
+            let sum = Double(firstTextFld.text!)! + Double(secondTextFld.text!)!
+            countView.text = "\(firstTextFld.text!) + \(secondTextFld.text!) = \(sum)"
+        }
         
+        
+        // old code.. working on newer stuff
+        /*
         counter = counter + 1
         countView.text = "\(counter)"
         
@@ -36,17 +49,22 @@ class ViewController: UIViewController {
             textLine.text = "One more round"
             view.backgroundColor = UIColor.green
             buttonIcon.isEnabled = false
-        } 
+        }
+        */
     }
     
     @IBAction func resetBtn(_ sender: Any) {
         
+        
+        // Old code .... working on newer stuff
+        /*
         textLine.text = "Do you want to go again? 🤪"
         view.backgroundColor = UIColor.white
         counter = 0
         countView.text = "\(counter)"
         buttonIcon.isEnabled = true
         
+        */
     }
     
     // This change is made to make sure I understand how to commit my code to Github
