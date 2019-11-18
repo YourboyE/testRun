@@ -68,6 +68,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DNy-l3-QJf">
+                                <rect key="frame" x="182.5" y="709" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -76,12 +79,14 @@
                             <constraint firstItem="AhG-Uw-X71" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8GA-JC-KKy"/>
                             <constraint firstItem="efl-Sr-v7b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BgX-ke-369"/>
                             <constraint firstItem="qXV-4j-JXW" firstAttribute="top" secondItem="efl-Sr-v7b" secondAttribute="bottom" constant="84" id="IN9-qL-9wy"/>
+                            <constraint firstItem="DNy-l3-QJf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jgn-tR-NoT"/>
                             <constraint firstItem="9vN-dq-3CW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pwg-ch-nVC"/>
                             <constraint firstItem="bvJ-Dt-8BM" firstAttribute="top" secondItem="AhG-Uw-X71" secondAttribute="bottom" constant="30" id="WAx-Mt-ruk"/>
                             <constraint firstItem="efl-Sr-v7b" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="X70-Aw-jhq"/>
                             <constraint firstItem="9vN-dq-3CW" firstAttribute="top" secondItem="bvJ-Dt-8BM" secondAttribute="bottom" constant="45" id="cEF-Iq-vQZ"/>
                             <constraint firstItem="0Sl-8f-nHL" firstAttribute="top" secondItem="9vN-dq-3CW" secondAttribute="bottom" constant="30" id="cyI-bE-aly"/>
                             <constraint firstItem="0Sl-8f-nHL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g3a-Wx-bPY"/>
+                            <constraint firstItem="DNy-l3-QJf" firstAttribute="top" secondItem="0Sl-8f-nHL" secondAttribute="bottom" constant="30" id="pM8-pk-29T"/>
                             <constraint firstItem="AhG-Uw-X71" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ulw-8u-hAX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -91,6 +96,7 @@
                         <outlet property="countView" destination="qXV-4j-JXW" id="x05-yu-5YE"/>
                         <outlet property="firstTextFld" destination="9vN-dq-3CW" id="0bh-hD-xtC"/>
                         <outlet property="secondTextFld" destination="0Sl-8f-nHL" id="Ghi-z0-x36"/>
+                        <outlet property="switchOn" destination="DNy-l3-QJf" id="Tck-pQ-X9F"/>
                         <outlet property="textLine" destination="efl-Sr-v7b" id="agV-6C-Xvv"/>
                     </connections>
                 </viewController>

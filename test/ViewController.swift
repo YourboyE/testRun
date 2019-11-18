@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var secondTextFld: UITextField!
     
+    @IBOutlet weak var switchOn: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,11 +29,14 @@ class ViewController: UIViewController {
     }
 
     @IBAction func button(_ sender: Any) {
-       
-        if firstTextFld.text != nil && secondTextFld.text != nil {
-
+        
+        if switchOn.isOn {
+        
             let sum = Double(firstTextFld.text!)! + Double(secondTextFld.text!)!
             countView.text = "\(firstTextFld.text!) + \(secondTextFld.text!) = \(sum)"
+        } else {
+            let sum = Double(firstTextFld.text!)! - Double(secondTextFld.text!)!
+                       countView.text = "\(firstTextFld.text!) - \(secondTextFld.text!) = \(sum)"
         }
         
         
