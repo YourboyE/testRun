@@ -49,5 +49,7 @@ class ViewController: UIViewController {
         
     }
     
+    // This change is made to make sure I understand how to commit my code to Github
+    
 }
 
